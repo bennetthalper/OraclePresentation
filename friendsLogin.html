@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body>
+    <body bgcolor="#0f1bfa">
+        <center><h1>Congrats for being my friend, Sign in to Continue</h1>
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/></center>
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "statecollege" && form.pswrd.value == "st8coll3g3") {
+                    window.open('friendsRedirect.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("NOPE try again boi")/*displays error message*/
+                }
+            }
+        </script>
+    </body>
+</html>
