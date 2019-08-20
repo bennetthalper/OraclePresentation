@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<html lang="en">
+<body bgcolor="#00ccff">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<div class="w3-display-middle">
+<center><h1 class="w3-jumbo w3-animate-top">You Have Found This Page! Click Go for prize!</h1></center>
+<hr class="w3-border-grey" style="margin:auto;width:40%">
+ <center> <p><button class="w3-center center transparent_btn" 
+onclick="play1()">Don't Click This Button</button></p></center>
+  <div id="youtube-frame"></div>
+  </div>
+</div>
+</body>
+
+<script>
+function play1() { 
+    var frame = document.getElementById("youtube-frame");
+    frame.innerHTML += "<iframe align='middle' width='760' height='315' src='https://www.youtube.com/embed/videoseries?list=PLsyvDWwjkTqtOmqAiTzzfHspTAztB-udL' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+  }
+</script></center>
+</body>
+</html>
